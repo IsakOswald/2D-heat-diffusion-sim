@@ -1,0 +1,78 @@
+Sequential Flat Float, 3000x3000, 1000, 1, 100, 20.6442, 1397
+Sequential No Auto-Vectorization, 3000x3000, 1000, 1, 100, 20.6442, 4122
+SIMD Flat Float, 3000x3000, 1000, 1, 100, 20.6442, 1389
+Metal Flat Float, 3000x3000, 1000, 1, 100, 20.6442, 1182
+MPI Blocking Flat Float, 3000x3000, 1000, 1, 100, 20.6442, 1340
+MPI NonBlocking Flat Float, 3000x3000, 1000, 1, 100, 20.6442, 1335
+MPI + SIMD NonBlocking, 3000x3000, 1000, 1, 100, 20.6442, 1855
+MPI Blocking Flat Float, 3000x3000, 1000, 3, 100, 20.6442, 690
+MPI NonBlocking Flat Float, 3000x3000, 1000, 3, 100, 20.6442, 688
+MPI + SIMD NonBlocking, 3000x3000, 1000, 3, 100, 20.6442, 743
+MPI Blocking Flat Float, 3000x3000, 1000, 6, 100, 20.6442, 937
+MPI NonBlocking Flat Float, 3000x3000, 1000, 6, 100, 20.6442, 876
+MPI + SIMD NonBlocking, 3000x3000, 1000, 6, 100, 20.6442, 942
+Sequential Flat Float, 5000x5000, 1000, 1, 100, 20.6442, 4544
+Sequential No Auto-Vectorization, 5000x5000, 1000, 1, 100, 20.6442, 11381
+SIMD Flat Float, 5000x5000, 1000, 1, 100, 20.6442, 4431
+Metal Flat Float, 5000x5000, 1000, 1, 100, 20.6442, 2787
+MPI Blocking Flat Float, 5000x5000, 1000, 1, 100, 20.6442, 4550
+MPI NonBlocking Flat Float, 5000x5000, 1000, 1, 100, 20.6442, 4543
+MPI + SIMD NonBlocking, 5000x5000, 1000, 1, 100, 20.6442, 5667
+MPI Blocking Flat Float, 5000x5000, 1000, 3, 100, 20.6442, 2344
+MPI NonBlocking Flat Float, 5000x5000, 1000, 3, 100, 20.6442, 2346
+MPI + SIMD NonBlocking, 5000x5000, 1000, 3, 100, 20.6442, 2486
+MPI Blocking Flat Float, 5000x5000, 1000, 6, 100, 20.6442, 2747
+MPI NonBlocking Flat Float, 5000x5000, 1000, 6, 100, 20.6442, 2611
+MPI + SIMD NonBlocking, 5000x5000, 1000, 6, 100, 20.6442, 2723
+Sequential Flat Float, 6000x6000, 1000, 1, 100, 20.6442, 7015
+Sequential No Auto-Vectorization, 6000x6000, 1000, 1, 100, 20.6442, 17534
+SIMD Flat Float, 6000x6000, 1000, 1, 100, 20.6442, 7214
+Metal Flat Float, 6000x6000, 1000, 1, 100, 20.6442, 3673
+MPI Blocking Flat Float, 6000x6000, 1000, 1, 100, 20.6442, 7739
+MPI NonBlocking Flat Float, 6000x6000, 1000, 1, 100, 20.6442, 6972
+MPI + SIMD NonBlocking, 6000x6000, 1000, 1, 100, 20.6442, 8588
+MPI Blocking Flat Float, 6000x6000, 1000, 3, 100, 20.6442, 3496
+MPI NonBlocking Flat Float, 6000x6000, 1000, 3, 100, 20.6442, 3490
+MPI + SIMD NonBlocking, 6000x6000, 1000, 3, 100, 20.6442, 3789
+MPI Blocking Flat Float, 6000x6000, 1000, 6, 100, 20.6442, 3859
+MPI NonBlocking Flat Float, 6000x6000, 1000, 6, 100, 20.6442, 3657
+MPI + SIMD NonBlocking, 6000x6000, 1000, 6, 100, 20.6442, 3851
+MPI + SIMD NonBlocking, 6000x6000, 1000, 6, 100, 20.6442, 3880
+MPI NonBlocking Flat Float, 6000x6000, 1000, 6, 100, 20.6442, 3698
+MPI Blocking Flat Float, 6000x6000, 1000, 6, 100, 20.6442, 3822
+MPI + SIMD NonBlocking, 6000x6000, 1000, 3, 100, 20.6442, 3764
+MPI NonBlocking Flat Float, 6000x6000, 1000, 3, 100, 20.6442, 3491
+MPI Blocking Flat Float, 6000x6000, 1000, 3, 100, 20.6442, 3495
+MPI + SIMD NonBlocking, 6000x6000, 1000, 1, 100, 20.6442, 8295
+MPI NonBlocking Flat Float, 6000x6000, 1000, 1, 100, 20.6442, 6910
+MPI Blocking Flat Float, 6000x6000, 1000, 1, 100, 20.6442, 6918
+Metal Flat Float, 6000x6000, 1000, 1, 100, 20.6442, 3668
+SIMD Flat Float, 6000x6000, 1000, 1, 100, 20.6442, 7134
+Sequential No Auto-Vectorization, 6000x6000, 1000, 1, 100, 20.6442, 17201
+Sequential Flat Float, 6000x6000, 1000, 1, 100, 20.6442, 6922
+MPI + SIMD NonBlocking, 5000x5000, 1000, 6, 100, 20.6442, 2654
+MPI NonBlocking Flat Float, 5000x5000, 1000, 6, 100, 20.6442, 2601
+MPI Blocking Flat Float, 5000x5000, 1000, 6, 100, 20.6442, 2788
+MPI + SIMD NonBlocking, 5000x5000, 1000, 3, 100, 20.6442, 2481
+MPI NonBlocking Flat Float, 5000x5000, 1000, 3, 100, 20.6442, 2341
+MPI Blocking Flat Float, 5000x5000, 1000, 3, 100, 20.6442, 2344
+MPI + SIMD NonBlocking, 5000x5000, 1000, 1, 100, 20.6442, 5498
+MPI NonBlocking Flat Float, 5000x5000, 1000, 1, 100, 20.6442, 4491
+MPI Blocking Flat Float, 5000x5000, 1000, 1, 100, 20.6442, 4495
+Metal Flat Float, 5000x5000, 1000, 1, 100, 20.6442, 2786
+SIMD Flat Float, 5000x5000, 1000, 1, 100, 20.6442, 4312
+Sequential No Auto-Vectorization, 5000x5000, 1000, 1, 100, 20.6442, 11008
+Sequential Flat Float, 5000x5000, 1000, 1, 100, 20.6442, 4487
+MPI + SIMD NonBlocking, 3000x3000, 1000, 6, 100, 20.6442, 934
+MPI NonBlocking Flat Float, 3000x3000, 1000, 6, 100, 20.6442, 881
+MPI Blocking Flat Float, 3000x3000, 1000, 6, 100, 20.6442, 945
+MPI + SIMD NonBlocking, 3000x3000, 1000, 3, 100, 20.6442, 742
+MPI NonBlocking Flat Float, 3000x3000, 1000, 3, 100, 20.6442, 691
+MPI Blocking Flat Float, 3000x3000, 1000, 3, 100, 20.6442, 691
+MPI + SIMD NonBlocking, 3000x3000, 1000, 1, 100, 20.6442, 1821
+MPI NonBlocking Flat Float, 3000x3000, 1000, 1, 100, 20.6442, 1284
+MPI Blocking Flat Float, 3000x3000, 1000, 1, 100, 20.6442, 1284
+Metal Flat Float, 3000x3000, 1000, 1, 100, 20.6442, 1176
+SIMD Flat Float, 3000x3000, 1000, 1, 100, 20.6442, 1313
+Sequential No Auto-Vectorization, 3000x3000, 1000, 1, 100, 20.6442, 3897
+Sequential Flat Float, 3000x3000, 1000, 1, 100, 20.6442, 1290

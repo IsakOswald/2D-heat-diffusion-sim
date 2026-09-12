@@ -1,0 +1,1176 @@
+
+==================================================
+RUN 1 / 78
+Repeat 1 | Sequential O3 | 3000x3000 | 1000 steps
+Command: ./heat_timed_seq 3000 3000 1000
+Started: Fri 11 Sep 2026 02:08:13 AEST
+Sequential heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 1397 ms
+Finished: Fri 11 Sep 2026 02:08:15 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 2 / 78
+Repeat 1 | Sequential O3 No Auto-Vectorization | 3000x3000 | 1000 steps
+Command: ./heat_timed_seq_novec 3000 3000 1000
+Started: Fri 11 Sep 2026 02:13:15 AEST
+Sequential heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 4122 ms
+Finished: Fri 11 Sep 2026 02:13:20 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 3 / 78
+Repeat 1 | Explicit SIMD | 3000x3000 | 1000 steps
+Command: ./heat_timed_simd 3000 3000 1000
+Started: Fri 11 Sep 2026 02:18:20 AEST
+SIMD width: 4 floats per vector
+SIMD heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 1389 ms
+Finished: Fri 11 Sep 2026 02:18:22 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 4 / 78
+Repeat 1 | Metal | 3000x3000 | 1000 steps
+Command: ./heat_timed_metal 3000 3000 1000
+Started: Fri 11 Sep 2026 02:23:22 AEST
+Metal device: Apple M3
+Metal heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 1182 ms
+Finished: Fri 11 Sep 2026 02:23:23 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 5 / 78
+Repeat 1 | MPI Blocking | 1 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_blocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 02:28:23 AEST
+Blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 1340 ms
+Finished: Fri 11 Sep 2026 02:28:25 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 6 / 78
+Repeat 1 | MPI Nonblocking | 1 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_nonblocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 02:33:25 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 1335 ms
+Finished: Fri 11 Sep 2026 02:33:27 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 7 / 78
+Repeat 1 | MPI+SIMD | 1 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_mpi_simd 3000 3000 1000
+Started: Fri 11 Sep 2026 02:38:27 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 1855 ms
+Finished: Fri 11 Sep 2026 02:38:30 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 8 / 78
+Repeat 1 | MPI Blocking | 3 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_blocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 02:43:30 AEST
+Blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 690 ms
+Finished: Fri 11 Sep 2026 02:43:31 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 9 / 78
+Repeat 1 | MPI Nonblocking | 3 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_nonblocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 02:48:31 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 688 ms
+Finished: Fri 11 Sep 2026 02:48:32 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 10 / 78
+Repeat 1 | MPI+SIMD | 3 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_mpi_simd 3000 3000 1000
+Started: Fri 11 Sep 2026 02:53:32 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 743 ms
+Finished: Fri 11 Sep 2026 02:53:32 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 11 / 78
+Repeat 1 | MPI Blocking | 6 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_blocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 02:58:32 AEST
+Blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 937 ms
+Finished: Fri 11 Sep 2026 02:58:33 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 12 / 78
+Repeat 1 | MPI Nonblocking | 6 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_nonblocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 03:03:33 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 876 ms
+Finished: Fri 11 Sep 2026 03:03:34 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 13 / 78
+Repeat 1 | MPI+SIMD | 6 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_mpi_simd 3000 3000 1000
+Started: Fri 11 Sep 2026 03:08:35 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 942 ms
+Finished: Fri 11 Sep 2026 03:08:36 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 14 / 78
+Repeat 1 | Sequential O3 | 5000x5000 | 1000 steps
+Command: ./heat_timed_seq 5000 5000 1000
+Started: Fri 11 Sep 2026 03:13:36 AEST
+Sequential heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 4544 ms
+Finished: Fri 11 Sep 2026 03:13:40 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 15 / 78
+Repeat 1 | Sequential O3 No Auto-Vectorization | 5000x5000 | 1000 steps
+Command: ./heat_timed_seq_novec 5000 5000 1000
+Started: Fri 11 Sep 2026 03:18:40 AEST
+Sequential heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 11381 ms
+Finished: Fri 11 Sep 2026 03:18:52 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 16 / 78
+Repeat 1 | Explicit SIMD | 5000x5000 | 1000 steps
+Command: ./heat_timed_simd 5000 5000 1000
+Started: Fri 11 Sep 2026 03:23:52 AEST
+SIMD width: 4 floats per vector
+SIMD heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 4431 ms
+Finished: Fri 11 Sep 2026 03:23:56 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 17 / 78
+Repeat 1 | Metal | 5000x5000 | 1000 steps
+Command: ./heat_timed_metal 5000 5000 1000
+Started: Fri 11 Sep 2026 03:28:56 AEST
+Metal device: Apple M3
+Metal heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 2787 ms
+Finished: Fri 11 Sep 2026 03:28:59 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 18 / 78
+Repeat 1 | MPI Blocking | 1 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_blocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 03:33:59 AEST
+Blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 4550 ms
+Finished: Fri 11 Sep 2026 03:34:04 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 19 / 78
+Repeat 1 | MPI Nonblocking | 1 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_nonblocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 03:39:04 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 4543 ms
+Finished: Fri 11 Sep 2026 03:39:08 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 20 / 78
+Repeat 1 | MPI+SIMD | 1 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_mpi_simd 5000 5000 1000
+Started: Fri 11 Sep 2026 03:44:08 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 5667 ms
+Finished: Fri 11 Sep 2026 03:44:14 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 21 / 78
+Repeat 1 | MPI Blocking | 3 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_blocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 03:49:14 AEST
+Blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 2344 ms
+Finished: Fri 11 Sep 2026 03:49:17 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 22 / 78
+Repeat 1 | MPI Nonblocking | 3 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_nonblocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 03:54:17 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 2346 ms
+Finished: Fri 11 Sep 2026 03:54:19 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 23 / 78
+Repeat 1 | MPI+SIMD | 3 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_mpi_simd 5000 5000 1000
+Started: Fri 11 Sep 2026 03:59:19 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 2486 ms
+Finished: Fri 11 Sep 2026 03:59:22 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 24 / 78
+Repeat 1 | MPI Blocking | 6 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_blocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 04:04:22 AEST
+Blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 2747 ms
+Finished: Fri 11 Sep 2026 04:04:25 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 25 / 78
+Repeat 1 | MPI Nonblocking | 6 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_nonblocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 04:09:25 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 2611 ms
+Finished: Fri 11 Sep 2026 04:09:27 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 26 / 78
+Repeat 1 | MPI+SIMD | 6 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_mpi_simd 5000 5000 1000
+Started: Fri 11 Sep 2026 04:14:27 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 2723 ms
+Finished: Fri 11 Sep 2026 04:14:30 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 27 / 78
+Repeat 1 | Sequential O3 | 6000x6000 | 1000 steps
+Command: ./heat_timed_seq 6000 6000 1000
+Started: Fri 11 Sep 2026 04:19:30 AEST
+Sequential heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 7015 ms
+Finished: Fri 11 Sep 2026 04:19:37 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 28 / 78
+Repeat 1 | Sequential O3 No Auto-Vectorization | 6000x6000 | 1000 steps
+Command: ./heat_timed_seq_novec 6000 6000 1000
+Started: Fri 11 Sep 2026 04:24:37 AEST
+Sequential heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 17534 ms
+Finished: Fri 11 Sep 2026 04:24:55 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 29 / 78
+Repeat 1 | Explicit SIMD | 6000x6000 | 1000 steps
+Command: ./heat_timed_simd 6000 6000 1000
+Started: Fri 11 Sep 2026 04:29:55 AEST
+SIMD width: 4 floats per vector
+SIMD heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 7214 ms
+Finished: Fri 11 Sep 2026 04:30:02 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 30 / 78
+Repeat 1 | Metal | 6000x6000 | 1000 steps
+Command: ./heat_timed_metal 6000 6000 1000
+Started: Fri 11 Sep 2026 04:35:02 AEST
+Metal device: Apple M3
+Metal heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 3673 ms
+Finished: Fri 11 Sep 2026 04:35:06 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 31 / 78
+Repeat 1 | MPI Blocking | 1 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_blocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 04:40:06 AEST
+Blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 7739 ms
+Finished: Fri 11 Sep 2026 04:40:14 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 32 / 78
+Repeat 1 | MPI Nonblocking | 1 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_nonblocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 04:45:14 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 6972 ms
+Finished: Fri 11 Sep 2026 04:45:22 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 33 / 78
+Repeat 1 | MPI+SIMD | 1 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_mpi_simd 6000 6000 1000
+Started: Fri 11 Sep 2026 04:50:22 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 8588 ms
+Finished: Fri 11 Sep 2026 04:50:30 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 34 / 78
+Repeat 1 | MPI Blocking | 3 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_blocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 04:55:30 AEST
+Blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 3496 ms
+Finished: Fri 11 Sep 2026 04:55:34 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 35 / 78
+Repeat 1 | MPI Nonblocking | 3 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_nonblocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 05:00:34 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 3490 ms
+Finished: Fri 11 Sep 2026 05:00:38 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 36 / 78
+Repeat 1 | MPI+SIMD | 3 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_mpi_simd 6000 6000 1000
+Started: Fri 11 Sep 2026 05:05:38 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 3789 ms
+Finished: Fri 11 Sep 2026 05:05:42 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 37 / 78
+Repeat 1 | MPI Blocking | 6 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_blocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 05:10:42 AEST
+Blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 3859 ms
+Finished: Fri 11 Sep 2026 05:10:46 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 38 / 78
+Repeat 1 | MPI Nonblocking | 6 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_nonblocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 05:15:46 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 3657 ms
+Finished: Fri 11 Sep 2026 05:15:49 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 39 / 78
+Repeat 1 | MPI+SIMD | 6 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_mpi_simd 6000 6000 1000
+Started: Fri 11 Sep 2026 05:20:49 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 3851 ms
+Finished: Fri 11 Sep 2026 05:20:53 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 40 / 78
+Repeat 2 | MPI+SIMD | 6 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_mpi_simd 6000 6000 1000
+Started: Fri 11 Sep 2026 05:35:53 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 3880 ms
+Finished: Fri 11 Sep 2026 05:35:57 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 41 / 78
+Repeat 2 | MPI Nonblocking | 6 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_nonblocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 05:40:57 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 3698 ms
+Finished: Fri 11 Sep 2026 05:41:01 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 42 / 78
+Repeat 2 | MPI Blocking | 6 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_blocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 05:46:01 AEST
+Blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 3822 ms
+Finished: Fri 11 Sep 2026 05:46:05 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 43 / 78
+Repeat 2 | MPI+SIMD | 3 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_mpi_simd 6000 6000 1000
+Started: Fri 11 Sep 2026 05:51:05 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 3764 ms
+Finished: Fri 11 Sep 2026 05:51:09 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 44 / 78
+Repeat 2 | MPI Nonblocking | 3 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_nonblocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 05:56:09 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 3491 ms
+Finished: Fri 11 Sep 2026 05:56:13 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 45 / 78
+Repeat 2 | MPI Blocking | 3 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_blocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 06:01:13 AEST
+Blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 3495 ms
+Finished: Fri 11 Sep 2026 06:01:16 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 46 / 78
+Repeat 2 | MPI+SIMD | 1 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_mpi_simd 6000 6000 1000
+Started: Fri 11 Sep 2026 06:06:16 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 8295 ms
+Finished: Fri 11 Sep 2026 06:06:25 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 47 / 78
+Repeat 2 | MPI Nonblocking | 1 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_nonblocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 06:11:25 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 6910 ms
+Finished: Fri 11 Sep 2026 06:11:32 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 48 / 78
+Repeat 2 | MPI Blocking | 1 ranks | 6000x6000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_blocking_mpi 6000 6000 1000
+Started: Fri 11 Sep 2026 06:16:32 AEST
+Blocking MPI heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 6918 ms
+Finished: Fri 11 Sep 2026 06:16:39 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 49 / 78
+Repeat 2 | Metal | 6000x6000 | 1000 steps
+Command: ./heat_timed_metal 6000 6000 1000
+Started: Fri 11 Sep 2026 06:21:39 AEST
+Metal device: Apple M3
+Metal heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 3668 ms
+Finished: Fri 11 Sep 2026 06:21:43 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 50 / 78
+Repeat 2 | Explicit SIMD | 6000x6000 | 1000 steps
+Command: ./heat_timed_simd 6000 6000 1000
+Started: Fri 11 Sep 2026 06:26:43 AEST
+SIMD width: 4 floats per vector
+SIMD heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 7134 ms
+Finished: Fri 11 Sep 2026 06:26:50 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 51 / 78
+Repeat 2 | Sequential O3 No Auto-Vectorization | 6000x6000 | 1000 steps
+Command: ./heat_timed_seq_novec 6000 6000 1000
+Started: Fri 11 Sep 2026 06:31:50 AEST
+Sequential heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 17201 ms
+Finished: Fri 11 Sep 2026 06:32:07 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 52 / 78
+Repeat 2 | Sequential O3 | 6000x6000 | 1000 steps
+Command: ./heat_timed_seq 6000 6000 1000
+Started: Fri 11 Sep 2026 06:37:07 AEST
+Sequential heat diffusion complete.
+Plate: 6000 x 6000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 6922 ms
+Finished: Fri 11 Sep 2026 06:37:14 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 53 / 78
+Repeat 2 | MPI+SIMD | 6 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_mpi_simd 5000 5000 1000
+Started: Fri 11 Sep 2026 06:42:14 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 2654 ms
+Finished: Fri 11 Sep 2026 06:42:17 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 54 / 78
+Repeat 2 | MPI Nonblocking | 6 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_nonblocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 06:47:17 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 2601 ms
+Finished: Fri 11 Sep 2026 06:47:20 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 55 / 78
+Repeat 2 | MPI Blocking | 6 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_blocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 06:52:20 AEST
+Blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 2788 ms
+Finished: Fri 11 Sep 2026 06:52:23 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 56 / 78
+Repeat 2 | MPI+SIMD | 3 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_mpi_simd 5000 5000 1000
+Started: Fri 11 Sep 2026 06:57:23 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 2481 ms
+Finished: Fri 11 Sep 2026 06:57:25 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 57 / 78
+Repeat 2 | MPI Nonblocking | 3 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_nonblocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 07:02:25 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 2341 ms
+Finished: Fri 11 Sep 2026 07:02:28 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 58 / 78
+Repeat 2 | MPI Blocking | 3 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_blocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 07:07:28 AEST
+Blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 2344 ms
+Finished: Fri 11 Sep 2026 07:07:30 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 59 / 78
+Repeat 2 | MPI+SIMD | 1 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_mpi_simd 5000 5000 1000
+Started: Fri 11 Sep 2026 07:12:30 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 5498 ms
+Finished: Fri 11 Sep 2026 07:12:36 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 60 / 78
+Repeat 2 | MPI Nonblocking | 1 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_nonblocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 07:17:36 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 4491 ms
+Finished: Fri 11 Sep 2026 07:17:41 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 61 / 78
+Repeat 2 | MPI Blocking | 1 ranks | 5000x5000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_blocking_mpi 5000 5000 1000
+Started: Fri 11 Sep 2026 07:22:41 AEST
+Blocking MPI heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 4495 ms
+Finished: Fri 11 Sep 2026 07:22:45 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 62 / 78
+Repeat 2 | Metal | 5000x5000 | 1000 steps
+Command: ./heat_timed_metal 5000 5000 1000
+Started: Fri 11 Sep 2026 07:27:45 AEST
+Metal device: Apple M3
+Metal heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 2786 ms
+Finished: Fri 11 Sep 2026 07:27:48 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 63 / 78
+Repeat 2 | Explicit SIMD | 5000x5000 | 1000 steps
+Command: ./heat_timed_simd 5000 5000 1000
+Started: Fri 11 Sep 2026 07:32:48 AEST
+SIMD width: 4 floats per vector
+SIMD heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 4312 ms
+Finished: Fri 11 Sep 2026 07:32:52 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 64 / 78
+Repeat 2 | Sequential O3 No Auto-Vectorization | 5000x5000 | 1000 steps
+Command: ./heat_timed_seq_novec 5000 5000 1000
+Started: Fri 11 Sep 2026 07:37:52 AEST
+Sequential heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 11008 ms
+Finished: Fri 11 Sep 2026 07:38:04 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 65 / 78
+Repeat 2 | Sequential O3 | 5000x5000 | 1000 steps
+Command: ./heat_timed_seq 5000 5000 1000
+Started: Fri 11 Sep 2026 07:43:04 AEST
+Sequential heat diffusion complete.
+Plate: 5000 x 5000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 4487 ms
+Finished: Fri 11 Sep 2026 07:43:08 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 66 / 78
+Repeat 2 | MPI+SIMD | 6 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_mpi_simd 3000 3000 1000
+Started: Fri 11 Sep 2026 07:48:08 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 934 ms
+Finished: Fri 11 Sep 2026 07:48:09 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 67 / 78
+Repeat 2 | MPI Nonblocking | 6 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_nonblocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 07:53:09 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 881 ms
+Finished: Fri 11 Sep 2026 07:53:10 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 68 / 78
+Repeat 2 | MPI Blocking | 6 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 6 ./heat_timed_blocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 07:58:10 AEST
+Blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 6
+Final centre temperature: 20.6442 C
+Execution time: 945 ms
+Finished: Fri 11 Sep 2026 07:58:11 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 69 / 78
+Repeat 2 | MPI+SIMD | 3 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_mpi_simd 3000 3000 1000
+Started: Fri 11 Sep 2026 08:03:11 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 742 ms
+Finished: Fri 11 Sep 2026 08:03:12 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 70 / 78
+Repeat 2 | MPI Nonblocking | 3 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_nonblocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 08:08:12 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 691 ms
+Finished: Fri 11 Sep 2026 08:08:13 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 71 / 78
+Repeat 2 | MPI Blocking | 3 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 3 ./heat_timed_blocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 08:13:13 AEST
+Blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 3
+Final centre temperature: 20.6442 C
+Execution time: 691 ms
+Finished: Fri 11 Sep 2026 08:13:14 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 72 / 78
+Repeat 2 | MPI+SIMD | 1 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_mpi_simd 3000 3000 1000
+Started: Fri 11 Sep 2026 08:18:14 AEST
+SIMD width: 4 floats per vector
+MPI + SIMD heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 1821 ms
+Finished: Fri 11 Sep 2026 08:18:16 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 73 / 78
+Repeat 2 | MPI Nonblocking | 1 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_nonblocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 08:23:16 AEST
+Non-blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 1284 ms
+Finished: Fri 11 Sep 2026 08:23:17 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 74 / 78
+Repeat 2 | MPI Blocking | 1 ranks | 3000x3000 | 1000 steps
+Command: mpirun -np 1 ./heat_timed_blocking_mpi 3000 3000 1000
+Started: Fri 11 Sep 2026 08:28:17 AEST
+Blocking MPI heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+MPI ranks: 1
+Final centre temperature: 20.6442 C
+Execution time: 1284 ms
+Finished: Fri 11 Sep 2026 08:28:18 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 75 / 78
+Repeat 2 | Metal | 3000x3000 | 1000 steps
+Command: ./heat_timed_metal 3000 3000 1000
+Started: Fri 11 Sep 2026 08:33:18 AEST
+Metal device: Apple M3
+Metal heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 1176 ms
+Finished: Fri 11 Sep 2026 08:33:20 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 76 / 78
+Repeat 2 | Explicit SIMD | 3000x3000 | 1000 steps
+Command: ./heat_timed_simd 3000 3000 1000
+Started: Fri 11 Sep 2026 08:38:20 AEST
+SIMD width: 4 floats per vector
+SIMD heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 1313 ms
+Finished: Fri 11 Sep 2026 08:38:21 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 77 / 78
+Repeat 2 | Sequential O3 No Auto-Vectorization | 3000x3000 | 1000 steps
+Command: ./heat_timed_seq_novec 3000 3000 1000
+Started: Fri 11 Sep 2026 08:43:21 AEST
+Sequential heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 3897 ms
+Finished: Fri 11 Sep 2026 08:43:25 AEST
+Exit code: 0
+==================================================
+
+==================================================
+RUN 78 / 78
+Repeat 2 | Sequential O3 | 3000x3000 | 1000 steps
+Command: ./heat_timed_seq 3000 3000 1000
+Started: Fri 11 Sep 2026 08:48:25 AEST
+Sequential heat diffusion complete.
+Plate: 3000 x 3000
+Timesteps: 1000
+Final centre temperature: 20.6442 C
+Execution time: 1290 ms
+Finished: Fri 11 Sep 2026 08:48:26 AEST
+Exit code: 0
+==================================================
